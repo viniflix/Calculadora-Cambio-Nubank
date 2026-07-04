@@ -1,24 +1,42 @@
-<div class="container">
-  <h2>Câmbio Nubank</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Câmbio Nubank</title>
   
-  <label for="moeda">Moeda:</label>
-  <select id="moeda">
-    <option value="USD">Dólar Americano (USD)</option>
-    <option value="JPY">Iene Japonês (JPY)</option>
-    <option value="EUR">Euro (EUR)</option>
-    <option value="GBP">Libra Esterlina (GBP)</option>
-    <option value="CAD">Dólar Canadense (CAD)</option>
-    <option value="ARS">Peso Argentino (ARS)</option>
-  </select>
+  <!-- Puxando o seu arquivo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <label for="valor">Valor da Compra:</label>
-  <input type="number" id="valor" value="">
+  <div class="container">
+    <h2>Câmbio Nubank</h2>
+    
+    <label for="moeda">Moeda:</label>
+    <select id="moeda">
+      <option value="USD">Dólar Americano (USD)</option>
+      <option value="JPY">Iene Japonês (JPY)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="GBP">Libra Esterlina (GBP)</option>
+      <option value="CAD">Dólar Canadense (CAD)</option>
+      <option value="ARS">Peso Argentino (ARS)</option>
+    </select>
 
-  <div class="result-box">
-    <p>Conversão Direta: R$ <span id="cotacao-base">Carregando...</span></p>
-    <p>Data Cotação: <strong><span id="data-ptax">...</span></strong></p>
-    <p>Spread Nubank: <strong>4%</strong></p>
-    <p>IOF: <strong>2,38%</strong></p>
-    <h3>Total: ≈ R$ <span id="total">...</span></h3>
+    <label for="valor">Valor da Compra:</label>
+    <input type="number" id="valor" value="">
+
+    <div class="result-box">
+      <p>Conversão Direta: R$ <span id="cotacao-base">Carregando...</span></p>
+      <p>Data Cotação: <strong><span id="data-ptax">...</span></strong></p>
+      <p>Spread Nubank: <strong>4%</strong></p>
+      <p>IOF: <strong>2,38%</strong></p>
+      <h3>Total: ≈ R$ <span id="total">...</span></h3>
+    </div>
   </div>
-</div>
+
+  <!-- Puxando o seu arquivo JavaScript no final do body -->
+  <script src="app.js"></script>
+
+</body>
+</html>
