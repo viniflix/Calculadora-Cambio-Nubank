@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora Câmbio Nubank</title>
   
-  <!-- Puxando o seu arquivo CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
-    <h2>Câmbio Nubank</h2>
+    <h2>Câmbio Nubank (PTAX)</h2>
     
     <label for="moeda">Moeda:</label>
     <select id="moeda">
@@ -24,19 +23,21 @@
     </select>
 
     <label for="valor">Valor da Compra:</label>
-    <input type="number" id="valor" value="">
+    <input type="number" id="valor" placeholder="Ex: 1000">
 
-    <div class="result-box">
-      <p>Conversão Direta: R$ <span id="cotacao-base">Carregando...</span></p>
-      <p>Data Cotação: <strong><span id="data-ptax">...</span></strong></p>
+    <!-- Novo botão adicionado -->
+    <button id="btn-calcular">Calcular Câmbio</button>
+
+    <!-- Caixa de resultado oculta por padrão -->
+    <div class="result-box" id="caixa-resultado" style="display: none;">
+      <p>PTAX Oficial (Venda): R$ <span id="cotacao-base">...</span></p>
+      <p>Data PTAX: <strong><span id="data-ptax">...</span></strong></p>
       <p>Spread Nubank: <strong>4%</strong></p>
       <p>IOF: <strong>2,38%</strong></p>
       <h3>Total: ≈ R$ <span id="total">...</span></h3>
     </div>
   </div>
 
-  <!-- Puxando o seu arquivo JavaScript no final do body -->
   <script src="app.js"></script>
-
 </body>
 </html>
