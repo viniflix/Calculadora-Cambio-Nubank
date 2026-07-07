@@ -1,5 +1,5 @@
 // Constantes das taxas do banco
-const IOF = 1.0238; // 2,38%
+const IOF = 1.035; // 3,50% - Atualizado conforme a fatura do Nubank
 const SPREAD = 1.04; // 4%
 
 // Capturando elementos
