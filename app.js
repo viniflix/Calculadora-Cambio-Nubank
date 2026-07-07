@@ -1,4 +1,4 @@
-// Constantes das taxas do banco 
+// Constantes das taxas do banco
 const IOF = 1.0238; // 2,38%
 const SPREAD = 1.04; // 4%
 
